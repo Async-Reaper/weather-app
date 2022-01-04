@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    background: #755A57;
+}
+
+a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.check__city{
+    margin: 0px 0 15px 0px;
+    display: none;
+}
+
+.check__city.active {
+    display: block;
+}
+
+.check__city-title{
+    margin-bottom: 2px;
+    margin-top: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn__check-city{
+    position: relative;
+}
+
+.btn__check-city::after,
+.btn__check-city::before{
+    position: absolute;
+    content: '';
+    cursor: pointer;
+}
+
+.btn__check-city::after{
+    top: 1px;
+    width: 10px;
+    height: 10px;
+    border: 5px solid #1c1c1c;
+    border-radius: 50px;
+    left: 14px
+}
+.btn__check-city::before{
+    top: 18px;
+    width: 18px;
+    height: 6px;
+    border-radius: 10px;
+    background: #1c1c1c;
+    transform: rotate(-45deg);
+    left: 5px;
+}
+
+
+.search__city{
+    backdrop-filter: blur(13px) saturate(200%);
+    -webkit-backdrop-filter: blur(13px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.47);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 10px 25px;
+    color: #DCDCDC;
+    outline: none;
+    font-size: 17px;
+}
+
+
+.city{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.city__name{
+    font-size: 20px;
+    line-height: 20px;
+    color: #3E5F8A;
+    margin: 0;
+}
+
+
+
+
+
+.date__time{
+    font-size: 20px;
+    line-height: 20px;
+    color: #3E5F8A;
+}
+
+.window__weather{
+    backdrop-filter: blur(13px) saturate(200%);
+    -webkit-backdrop-filter: blur(13px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.47);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 10px 25px;
+    color: #DCDCDC;
+    height: 340px;
+    width: 600px;
+    margin-top: 10px;
+}
+
+.list__params{
+    padding: 0;
+}
+
+.weather__temp{
+    background: #3F888F;
+    padding: 6px 3px;
+    width: 210px;
+    border-radius: 7px;
+}
+
+.weather__forecast-list{
+    padding: 0;
+}
+
+.weather__forecast-day{
+    margin-bottom: 35px;
+}
+
+.weather__temp{
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.forecast__day{
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.weather__forecast-day{
+    backdrop-filter: blur(13px) saturate(200%);
+    -webkit-backdrop-filter: blur(13px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.47);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 0 25px;
+    color: #DCDCDC;
+}
+
+.more__info-list{
+    margin-top: 30px;
+    padding: 0;
+}
+
+.weather__week{
+    color: #3E5F8A;
+}

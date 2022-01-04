@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/weatherCurrentCity.js" defer></script>
+    <script src="./js/weatherNewCity.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather__current">
+            <a class="check__city-title">Поменять местоположение</a>
+            <div class="check__city">
+                <input class="search__city" value="" type="text">
+                <a class="btn__check-city"></a>
+            </div>    
+            <div class="window__weather">
+                <div class="city">
+                    <h1 class="city__name"></h1>
+                </div>
+                    <div class="date">
+                    <h1 class="date__time"></h1>
+                </div>
+                <div class="block__params">
+                    <div class="temperature">
+                        <p class="weather__temp"></p>
+                    </div>
+                    <div class="weather__params">
+                        <ul class="list__params">
+                            <li class="list__params-item">
+                                <p class="params__cur-day feel__tem"></p>
+                            </li>
+                            <li class="list__params-item">
+                                <p class="params__cur-day wind"></p>
+                            </li>
+                            <li class="list__params-item">
+                                <p class="params__cur-day pressure"></p>
+                            </li>
+                            <li class="list__params-item">
+                                <p class="params__cur-day humidity"></p>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weather__forecast">
+            <h1 class="forecast__day">Прогноз на 8 дней</h1>
+            <ul class="weather__forecast-list">
+                
+            </ul>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
