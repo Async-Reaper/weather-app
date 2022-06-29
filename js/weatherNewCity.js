@@ -36,7 +36,7 @@ const weatherNewCity = () => {
 
         city = checkCity.value
         const APIkey = 'e838be31c6a1ebf836e45dc638348a26';
-        const urlGetWeather = `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${APIkey}`;
+        const urlGetWeather = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${APIkey}`;
 
         const weatherCurrentCity = document.querySelectorAll('.weather__current-city');
 
